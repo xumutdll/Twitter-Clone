@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.1.2-web/css/all.css" />
+
+    <script src="./script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="gap-left"></div>
+
+      <div class="banner">
+        <div class="menu">
+          <a href="">
+            <div class="logo">
+              <img src="images/2021 Twitter logo - blue.png" alt="logo" />
+            </div>
+          </a>
+          <ul>
+            <a href="" onmouseover="menuHover(0)" onmouseout="menuHover(1)">
+              <li>
+                <i class="fa-solid fa-house"></i>
+                <p>Home</p>
+              </li>
+            </a>
+            <a href="" onmouseover="menuHover(2)" onmouseout="menuHover(3)">
+              <li>
+                <i class="fa-solid fa-hashtag"></i>
+                <p>Explore</p>
+              </li>
+            </a>
+            <a href="" onmouseover="menuHover(4)" onmouseout="menuHover(5)">
+              <li>
+                <i class="fa-regular fa-bell"></i>
+                <p>Notifications</p>
+              </li>
+            </a>
+            <a href="" onmouseover="menuHover(6)" onmouseout="menuHover(7)">
+              <li>
+                <i class="fa-regular fa-envelope"></i>
+                <p>Messages</p>
+              </li>
+            </a>
+            <a href="" onmouseover="menuHover(8)" onmouseout="menuHover(9)">
+              <li>
+                <i class="fa-regular fa-bookmark"></i>
+                <p>Bookmarks</p>
+              </li>
+            </a>
+            <a href="" onmouseover="menuHover(10)" onmouseout="menuHover(11)">
+              <li>
+                <i class="fa-regular fa-rectangle-list"></i>
+                <p>Lists</p>
+              </li>
+            </a>
+            <a href="" onmouseover="menuHover(12)" onmouseout="menuHover(13)">
+              <li>
+                <i class="fa-regular fa-user"></i>
+                <p>Profile</p>
+              </li>
+            </a>
+            <a href="" onmouseover="menuHover(14)" onmouseout="menuHover(15)">
+              <li>
+                <i class="fa-solid fa-ellipsis"></i>
+                <p>More</p>
+              </li>
+            </a>
+          </ul>
+          <button class="btn">
+            <span>Tweet</span>
+            <i class="fa-solid fa-pencil"></i>
+          </button>
+        </div>
+
+        <div class="user">
+          <div class="user-info">
+            <img src="images/profile.jpg" alt="profile-photo" />
+            <div class="user-tag">
+              <h4>Umut Can</h4>
+              <p>@xumut_dll</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-ellipsis fa-sm"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="content">
+        <div class="posts">
+          <div class="home con-p">
+            <h4>Home</h4>
+            <i class="fa-regular fa-star fa-sm"></i>
+          </div>
+          <div class="whats-happening con-p">
+            <img src="images/profile.jpg" alt="profile-photo" />
+            <div class="content">
+              <div class="reply r1">
+                Everyone <i class="fa-solid fa-chevron-down fa-sm"></i>
+              </div>
+              <textarea
+                class="text-area"
+                placeholder="What's happening?"
+                onkeyup="tweetButtonVerify()"
+                onclick="tweetMode()"
+              ></textarea>
+              <div class="reply r2">
+                <i class="fa-solid fa-earth-americas"></i> Everyone can reply
+              </div>
+              <div class="buttons">
+                <div class="little-icons">
+                  <i class="fa-regular fa-image"></i>
+                  <i class="fa-regular fa-images"></i>
+                  <i class="fa-solid fa-square-poll-horizontal"></i>
+                  <i class="fa-regular fa-face-smile"></i>
+                  <i class="fa-solid fa-calendar-days"></i>
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <button type="button" class="btn" disabled>Tweet</button>
+              </div>
+            </div>
+          </div>
+          <div class="showTweets con">Show 130 Tweets</div>
+          <div class="thePost con">
+            <div class="label">
+              <i class="fa-solid fa-heart"></i>
+              <p>Umut Can liked</p>
+            </div>
+            <div class="postContent">
+              <div class="leftContent">
+                <img src="images/profile.jpg" alt="profile-photo" />
+                <div class="line"></div>
+              </div>
+              <div class="rightContent">
+                <div class="head">
+                  <h5>Lorem</h5>
+                  <i class="fa-solid fa-circle-check fa-xs"></i>
+                  <h6>@Lorem_ipsum</h6>
+                  <h6>·</h6>
+                  <h6>9h</h6>
+
+                  <i class="fa-solid fa-ellipsis fa-sm"></i>
+                </div>
+                <div class="text"><p>Lorem ipsum dolor sit amet!</p></div>
+                <div class="icons">
+                  <div
+                    class="group"
+                    onmouseover="iconHover(0)"
+                    onmouseout="iconHover(1)"
+                  >
+                    <i class="fa-regular fa-comment"></i>
+                    <p>216</p>
+                  </div>
+                  <div
+                    class="group"
+                    onmouseover="iconHover(2)"
+                    onmouseout="iconHover(3)"
+                  >
+                    <i class="fa-solid fa-retweet"></i>
+                    <p>217</p>
+                  </div>
+                  <div
+                    class="group"
+                    onmouseover="iconHover(4)"
+                    onmouseout="iconHover(5)"
+                  >
+                    <i class="fa-regular fa-heart"></i>
+                    <p>218</p>
+                  </div>
+                  <div class="group">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer">
+              <img src="images/profile.jpg" alt="profile-photo" />
+              <p>Show this tread</p>
+            </div>
+          </div>
+          <div class="thePost con">
+            <div class="label">
+              <i class="fa-solid fa-heart"></i>
+              <p>Umut Can liked</p>
+            </div>
+            <div class="postContent">
+              <div class="leftContent">
+                <img src="images/profile.jpg" alt="profile-photo" />
+                <div class="line"></div>
+              </div>
+              <div class="rightContent">
+                <div class="head">
+                  <h5>Lorem</h5>
+                  <i class="fa-solid fa-circle-check fa-xs"></i>
+                  <h6>@Lorem_ipsum</h6>
+                  <h6>·</h6>
+                  <h6>9h</h6>
+
+                  <i class="fa-solid fa-ellipsis fa-sm"></i>
+                </div>
+                <div class="text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid temporibus sint incidunt animi ipsa aspernatur quia
+                  </p>
+                </div>
+                <div class="box"></div>
+                <div class="icons">
+                  <div
+                    class="group"
+                    onmouseover="iconHover(0)"
+                    onmouseout="iconHover(1)"
+                  >
+                    <i class="fa-regular fa-comment"></i>
+                    <p>216</p>
+                  </div>
+                  <div
+                    class="group"
+                    onmouseover="iconHover(2)"
+                    onmouseout="iconHover(3)"
+                  >
+                    <i class="fa-solid fa-retweet"></i>
+                    <p>217</p>
+                  </div>
+                  <div
+                    class="group"
+                    onmouseover="iconHover(4)"
+                    onmouseout="iconHover(5)"
+                  >
+                    <i class="fa-regular fa-heart"></i>
+                    <p>218</p>
+                  </div>
+                  <div class="group">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer">
+              <img src="images/profile.jpg" alt="profile-photo" />
+              <p>Show this tread</p>
+            </div>
+          </div>
+          <div class="thePost con">
+            <div class="label"></div>
+            <div class="postContent">
+              <div class="leftContent">
+                <img src="images/profile.jpg" alt="profile-photo" />
+              </div>
+              <div class="rightContent">
+                <div class="head">
+                  <h5>Lorem</h5>
+                  <i class="fa-solid fa-circle-check fa-xs"></i>
+                  <h6>@Lorem_ipsum</h6>
+                  <h6>·</h6>
+                  <h6>9h</h6>
+
+                  <i class="fa-solid fa-ellipsis fa-sm"></i>
+                </div>
+                <div class="text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid temporibus sint incidunt animi ipsa aspernatur quia
+                  </p>
+                </div>
+                <div class="box"></div>
+                <div class="icons">
+                  <div
+                    class="group"
+                    onmouseover="iconHover(0)"
+                    onmouseout="iconHover(1)"
+                  >
+                    <i class="fa-regular fa-comment"></i>
+                    <p>216</p>
+                  </div>
+                  <div
+                    class="group"
+                    onmouseover="iconHover(2)"
+                    onmouseout="iconHover(3)"
+                  >
+                    <i class="fa-solid fa-retweet"></i>
+                    <p>217</p>
+                  </div>
+                  <div
+                    class="group"
+                    onmouseover="iconHover(4)"
+                    onmouseout="iconHover(5)"
+                  >
+                    <i class="fa-regular fa-heart"></i>
+                    <p>218</p>
+                  </div>
+                  <div class="group">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="thePost con">
+            <div class="label">
+              <i class="fa-solid fa-heart"></i>
+              <p>Umut Can liked</p>
+            </div>
+            <div class="postContent">
+              <div class="leftContent">
+                <img src="images/profile.jpg" alt="profile-photo" />
+              </div>
+              <div class="rightContent">
+                <div class="head">
+                  <h5>Lorem</h5>
+                  <i class="fa-solid fa-circle-check fa-xs"></i>
+                  <h6>@Lorem_ipsum</h6>
+                  <h6>·</h6>
+                  <h6>9h</h6>
+
+                  <i class="fa-solid fa-ellipsis fa-sm"></i>
+                </div>
+                <div class="text">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolorum cum doloremque totam est minima iste facilis
+                    expedita quis impedit placeat perspiciatis illum quaerat,
+                    saepe molestias adipisci explicabo fugit, nobis itaque.
+                    Nostrum ab nemo esse nisi? Numquam reprehenderit veniam
+                    labore laboriosam ut distinctio iure, placeat optio. Quo
+                    tenetur debitis adipisci provident impedit esse vitae ipsum
+                    nobis velit, cumque, fugiat dolore eum! Quos fugiat,
+                    necessitatibus quisquam quibusdam excepturi, minus enim,
+                    quas iusto voluptates alias esse totam. Rem fuga, nisi eaque
+                    non libero iusto pariatur sequi excepturi mollitia nam,
+                    perspiciatis eum quaerat reiciendis?
+                  </p>
+                </div>
+                <div class="icons">
+                  <div
+                    class="group"
+                    onmouseover="iconHover(0)"
+                    onmouseout="iconHover(1)"
+                  >
+                    <i class="fa-regular fa-comment"></i>
+                    <p>216</p>
+                  </div>
+                  <div
+                    class="group"
+                    onmouseover="iconHover(2)"
+                    onmouseout="iconHover(3)"
+                  >
+                    <i class="fa-solid fa-retweet"></i>
+                    <p>217</p>
+                  </div>
+                  <div
+                    class="group"
+                    onmouseover="iconHover(4)"
+                    onmouseout="iconHover(5)"
+                  >
+                    <i class="fa-regular fa-heart"></i>
+                    <p>218</p>
+                  </div>
+                  <div class="group">
+                    <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="side">
+          <div class="search-container">
+            <div class="search">
+              <input
+                type="text"
+                placeholder="Search Twitter"
+                onfocus="searchFocus(true)"
+                onblur="searchFocus(false)"
+              />
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div id="search-results">
+              Try searching for people, topics, or keywords
+            </div>
+          </div>
+          <div class="trends">
+            <div class="head">Trends for you</div>
+            <ul>
+              <a href="">
+                <li>
+                  <div class="country">
+                    <p>Trending in Turkey</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                  <div class="trend">
+                    <h5>Lorem ipsum</h5>
+                  </div>
+                  <div class="tweet-number">
+                    <p>1,572K Tweets</p>
+                  </div>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <div class="country">
+                    <p>Trending in Turkey</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                  <div class="trend">
+                    <h5>Lorem ipsum</h5>
+                  </div>
+                  <div class="tweet-number">
+                    <p>1,572K Tweets</p>
+                  </div>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <div class="country">
+                    <p>Trending in Turkey</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                  <div class="trend">
+                    <h5>Lorem ipsum</h5>
+                  </div>
+                  <div class="tweet-number">
+                    <p>1,572K Tweets</p>
+                  </div>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <div class="country">
+                    <p>Trending in Turkey</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                  <div class="trend">
+                    <h5>Lorem ipsum</h5>
+                  </div>
+                  <div class="tweet-number">
+                    <p>1,572K Tweets</p>
+                  </div>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <div class="country">
+                    <p>Trending in Turkey</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                  <div class="trend">
+                    <h5>Lorem ipsum</h5>
+                  </div>
+                  <div class="tweet-number">
+                    <p>1,572K Tweets</p>
+                  </div>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <div class="country">
+                    <p>Trending in Turkey</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                  <div class="trend">
+                    <h5>Lorem ipsum</h5>
+                  </div>
+                  <div class="tweet-number">
+                    <p>1,572K Tweets</p>
+                  </div>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <div class="country">
+                    <p>Trending in Turkey</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                  <div class="trend">
+                    <h5>Lorem ipsum</h5>
+                  </div>
+                  <div class="tweet-number">
+                    <p>1,572K Tweets</p>
+                  </div>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <div class="country">
+                    <p>Trending in Turkey</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                  <div class="trend">
+                    <h5>Lorem ipsum</h5>
+                  </div>
+                  <div class="tweet-number">
+                    <p>1,572K Tweets</p>
+                  </div>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <div class="country">
+                    <p>Trending in Turkey</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                  <div class="trend">
+                    <h5>Lorem ipsum</h5>
+                  </div>
+                  <div class="tweet-number">
+                    <p>1,572K Tweets</p>
+                  </div>
+                </li>
+              </a>
+              <a href="">
+                <li>
+                  <div class="country">
+                    <p>Trending in Turkey</p>
+                    <i class="fa-solid fa-ellipsis"></i>
+                  </div>
+                  <div class="trend">
+                    <h5>Lorem ipsum</h5>
+                  </div>
+                  <div class="tweet-number">
+                    <p>1,572K Tweets</p>
+                  </div>
+                </li>
+              </a>
+            </ul>
+            <a href=""> <div class="tail">Show more</div> </a>
+          </div>
+          <div class="follow-suggestions">
+            <div class="head">Who to follow</div>
+            <a href="">
+              <li>
+                <div class="user-info">
+                  <img src="images/profile.jpg" alt="profile-photo" />
+                  <div class="user-tag">
+                    <div class="verification">
+                      <h4>Umut Can</h4>
+                    </div>
+                    <p>@xumut_dll</p>
+                  </div>
+                </div>
+                <button class="follow-btn">Follow</button>
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <div class="user-info">
+                  <img src="images/profile.jpg" alt="profile-photo" />
+                  <div class="user-tag">
+                    <div class="verification">
+                      <h4>Lorem ipsum</h4>
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <p>@xumutdll</p>
+                  </div>
+                </div>
+                <button class="follow-btn">Follow</button>
+              </li>
+            </a>
+            <a href="">
+              <li>
+                <div class="user-info">
+                  <img src="images/profile.jpg" alt="profile-photo" />
+                  <div class="user-tag">
+                    <div class="verification">
+                      <h4>Lorem ipsum</h4>
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <p>@xumut.dll</p>
+                  </div>
+                </div>
+                <button class="follow-btn">Follow</button>
+              </li>
+            </a>
+            <a href=""> <div class="tail">Show more</div> </a>
+          </div>
+          <div class="footer">
+            <a href="">Terms of Service</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Cookie Policy</a>
+            <a href="">Imprint</a>
+            <a href="">Accessibility</a>
+            <a href="">Ads info</a>
+            <a href="">More...</a>
+            <p>© 2022 Twitter, Inc.</p>
+          </div>
+        </div>
+      </div>
+      <div class="gap-right"></div>
+    </div>
+    <div class="foot">
+      <div class="home"><i class="fa-solid fa-house fa-lg"></i></div>
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+      </div>
+      <div class="notifications"><i class="fa-regular fa-bell fa-lg"></i></div>
+      <div class="messages"><i class="fa-regular fa-envelope fa-lg"></i></div>
+    </div>
+  </body>
+</html>
